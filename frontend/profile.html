@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alumni Profile | AlumniConnect</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <section class="section">
+    <div class="container" id="profileContainer">
+      <p class="text-center">Loading profile...</p>
+    </div>
+  </section>
+
+  <!-- ===================== INTERNSHIP REQUEST MODAL ===================== -->
+  <div class="modal-overlay hidden" id="internshipModal">
+    <div class="modal-box">
+      <h3>Request Internship Guidance</h3>
+      <div id="internshipAlert" class="alert"></div>
+      <form id="internshipForm">
+        <div class="form-group">
+          <label for="internshipMessage">Your Message</label>
+          <textarea id="internshipMessage" rows="4" placeholder="Introduce yourself and explain what kind of internship guidance you're looking for..."></textarea>
+        </div>
+        <div style="display:flex; gap:10px;">
+          <button type="submit" class="btn btn-primary btn-block">Send Request</button>
+          <button type="button" class="btn btn-outline btn-block" id="closeModalBtn">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>

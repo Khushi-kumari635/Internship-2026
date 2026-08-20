@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | AlumniConnect</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <section class="section">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-subtitle">Have a question or feedback? We'd love to hear from you.</p>
+
+    <div class="contact-layout">
+      <!-- ===================== CONTACT INFO ===================== -->
+      <div class="contact-info-box">
+        <h3 style="color: var(--primary-blue); margin-bottom:18px;">Contact Information</h3>
+        <div class="info-line">📍 <span>College Campus, Jaipur, Rajasthan, India</span></div>
+        <div class="info-line">📧 <span>alumni@college.edu.in</span></div>
+        <div class="info-line">📞 <span>+91 98765 43210</span></div>
+        <div class="info-line">🕒 <span>Monday - Friday, 9:00 AM - 5:00 PM</span></div>
+
+        <h3 style="color: var(--primary-blue); margin: 24px 0 12px 0;">Alumni Relations Office</h3>
+        <p style="color: var(--gray-text); font-size: 0.9rem;">
+          For alumni association queries, event partnerships, or mentorship program details,
+          reach out to our Alumni Relations Cell directly at the email above.
+        </p>
+      </div>
+
+      <!-- ===================== CONTACT FORM ===================== -->
+      <div class="contact-info-box">
+        <h3 style="color: var(--primary-blue); margin-bottom:18px;">Send a Message</h3>
+        <div id="contactAlert" class="alert"></div>
+
+        <form id="contactForm" novalidate>
+          <div class="form-group" id="contactNameGroup">
+            <label for="contactName">Your Name</label>
+            <input type="text" id="contactName" placeholder="e.g. Neha Gupta" />
+            <span class="form-error">Please enter your name.</span>
+          </div>
+
+          <div class="form-group" id="contactEmailGroup">
+            <label for="contactEmail">Your Email</label>
+            <input type="email" id="contactEmail" placeholder="e.g. neha.gupta@example.com" />
+            <span class="form-error">Please enter a valid email address.</span>
+          </div>
+
+          <div class="form-group" id="contactMessageGroup">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" rows="5" placeholder="Write your message here..."></textarea>
+            <span class="form-error">Message must be at least 10 characters.</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events | AlumniConnect</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <section class="section">
+    <h2 class="section-title">Events & Reunions</h2>
+    <p class="section-subtitle">Stay connected through webinars, workshops, meetups, and reunions.</p>
+
+    <div class="container">
+      <div class="filter-bar">
+        <div class="filter-group">
+          <label for="eventTypeFilter">Event Type</label>
+          <select id="eventTypeFilter">
+            <option value="">All Types</option>
+            <option value="Reunion">Reunion</option>
+            <option value="Webinar">Webinar</option>
+            <option value="Workshop">Workshop</option>
+            <option value="Meetup">Meetup</option>
+            <option value="Networking">Networking</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="card-grid" id="eventsGrid">
+        <!-- Filled dynamically by events.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EVENT DETAILS + RSVP MODAL ===================== -->
+  <div class="modal-overlay hidden" id="eventDetailsModal">
+    <div class="modal-box" id="eventDetailsContent"></div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/events.js"></script>
+</body>
+</html>

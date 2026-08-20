@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alumni Directory | AlumniConnect</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <section class="section">
+    <h2 class="section-title">Alumni Directory</h2>
+    <p class="section-subtitle">Search and filter through our network of accomplished alumni.</p>
+
+    <div class="container">
+      <!-- ===================== FILTER BAR ===================== -->
+      <div class="filter-bar">
+        <div class="filter-group">
+          <label for="searchInput">Search by Name</label>
+          <input type="text" id="searchInput" placeholder="e.g. Rahul Sharma" />
+        </div>
+        <div class="filter-group">
+          <label for="batchFilter">Batch (Graduation Year)</label>
+          <select id="batchFilter">
+            <option value="">All Batches</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="locationFilter">Location</label>
+          <select id="locationFilter">
+            <option value="">All Locations</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="industryFilter">Industry</label>
+          <select id="industryFilter">
+            <option value="">All Industries</option>
+          </select>
+        </div>
+        <div class="filter-group" style="flex: 0.5;">
+          <button id="clearFiltersBtn" class="btn btn-outline btn-block">Clear</button>
+        </div>
+      </div>
+
+      <p id="resultCount" style="color: var(--gray-text); margin-bottom: 16px;"></p>
+
+      <!-- ===================== ALUMNI GRID ===================== -->
+      <div class="card-grid" id="alumniGrid">
+        <!-- Filled dynamically by directory.js -->
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/directory.js"></script>
+</body>
+</html>

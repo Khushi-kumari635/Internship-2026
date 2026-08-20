@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | AlumniConnect</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <div class="form-wrapper">
+    <h2>Welcome Back</h2>
+    <p class="form-subtitle">Login to access your alumni network dashboard.</p>
+
+    <div id="formAlert" class="alert"></div>
+
+    <form id="loginForm" novalidate>
+      <div class="form-group" id="emailGroup">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="e.g. rahul.sharma@example.com" />
+        <span class="form-error">Please enter a valid email address.</span>
+      </div>
+
+      <div class="form-group" id="passwordGroup">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" />
+        <span class="form-error">Password must be at least 6 characters.</span>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Login</button>
+    </form>
+
+    <p class="form-footer-text">
+      Don't have an account? <a href="register.html">Register here</a>
+    </p>
+
+    <p class="form-footer-text" style="margin-top:6px; font-size:0.8rem;">
+      Demo login: any seeded email (e.g. rahul.sharma@example.com) · Password: password123
+    </p>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

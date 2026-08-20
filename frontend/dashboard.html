@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | AlumniConnect</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <section class="section">
+    <div class="container">
+      <div class="dashboard-layout">
+
+        <!-- ===================== SIDEBAR ===================== -->
+        <aside class="sidebar">
+          <div class="avatar avatar-large" id="sidebarAvatar">?</div>
+          <p class="sidebar-user-name" id="sidebarUserName">Loading...</p>
+          <p class="sidebar-user-role" id="sidebarUserRole"></p>
+
+          <nav class="sidebar-nav">
+            <a href="dashboard.html" class="active">📊 Dashboard</a>
+            <a href="directory.html">🧑‍🤝‍🧑 Alumni Directory</a>
+            <a href="jobs.html">💼 Job Board</a>
+            <a href="events.html">🎉 Events</a>
+            <a href="#" id="sidebarLogoutLink">🚪 Logout</a>
+          </nav>
+        </aside>
+
+        <!-- ===================== MAIN DASHBOARD CONTENT ===================== -->
+        <main>
+          <!-- Welcome Section -->
+          <div class="welcome-banner" id="welcomeBanner">
+            <h2>Welcome back! 👋</h2>
+            <p>Here's what's happening in your alumni network today.</p>
+          </div>
+
+          <!-- Statistics Cards -->
+          <div class="stats-grid" id="dashboardStats">
+            <!-- Filled dynamically by dashboard.js -->
+          </div>
+
+          <!-- Quick Actions -->
+          <div class="quick-actions">
+            <a href="directory.html" class="quick-action-btn">🔍 Browse Alumni</a>
+            <a href="jobs.html" class="quick-action-btn">💼 View Job Board</a>
+            <a href="events.html" class="quick-action-btn">🎉 See Events</a>
+          </div>
+
+          <!-- Latest Job Posts -->
+          <div class="dashboard-section">
+            <h3>Latest Job Posts</h3>
+            <div id="dashboardJobs">
+              <p>Loading...</p>
+            </div>
+          </div>
+
+          <!-- Upcoming Events -->
+          <div class="dashboard-section">
+            <h3>Upcoming Events</h3>
+            <div id="dashboardEvents">
+              <p>Loading...</p>
+            </div>
+          </div>
+
+          <!-- Recent Announcements -->
+          <div class="dashboard-section">
+            <h3>Recent Announcements</h3>
+            <div id="dashboardAnnouncements">
+              <p>Loading...</p>
+            </div>
+          </div>
+        </main>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
